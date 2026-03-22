@@ -1,0 +1,21 @@
+.projects {
+  max-width: var(--width-s);
+}
+
+.projects__title {
+  font-size: var(--step-4);
+  width: fit-content;
+  margin-inline: auto;
+
+  &:has( + .projects__container) {
+    margin-block-end: var(--space-3xs);
+  }
+}
+
+.projects__container {
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+}
